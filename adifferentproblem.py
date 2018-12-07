@@ -5,8 +5,11 @@ def difference(a, b):
         return(b-a)
 
 
-n = str(input())
-while True:
-    input = [int(i) for i in n.split()]
+userInput = str(input())
+if userInput != "":
+    input = [int(i) for i in userInput.split()]
     print(difference(input[0], input[1]))
-    n = (input())
+    userInput = 1
+    print(userInput)
+    print(type(userInput))
+    userInput = str(input())
